@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3012;
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow only your frontend origin
+    origin: "https://traffic-run-client.vercel.app", // Allow only your frontend origin
     methods: "GET, POST, PUT, DELETE, OPTIONS",
     allowedHeaders: "Content-Type, Authorization, x-msg-sender,x-signature", // Allow 'x-msg-sender'
   })
